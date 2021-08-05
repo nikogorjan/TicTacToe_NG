@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Game</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.4.0/sockjs.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+    </head>
+    <body>
+        <div class="center_game" >
+
+            <div class="board">
+            <div class="block_container">
+                <div class="cell" id="0"></div>
+                <div class="cell" id="1"></div>
+                <div class="cell" id="2"></div>
+            </div>
+
+            <div class="block_container">
+                <div class="cell" id="3"></div>
+                <div class="cell" id="4"></div>
+                <div class="cell" id="5"></div>
+            </div>
+
+            <div class="block_container">
+                <div class="cell" id="6"></div>
+                <div class="cell" id="7"></div>
+                <div class="cell" id="8"></div>
+            </div>
+            </div>
+                    
+                
+            
+        </div>
+
+
+        <div class="endgame">
+            <div class="text"></div>
+            <button onClick="startGame()">Replay</button>
+        </div>
+        <!--<div class="id_of_game" id="id_of_game"><span id="changeid">Game ID: </span></div>
+        <div class="oponent"><span id="oponent"></span></div>-->
+        <script>
+            window.onload = function(){
+
+                startGame();
+            };
+
+
+
+        </script>
+        <script src="js/script.js"></script>
+        <script src="/js/minimax.js"></script>
+        <!--<script src="js/script.js"></script>
+        <script src="js/socket_js.js"></script>
+        <script src="js/game.js"></script>-->
+    </body>
+</html>

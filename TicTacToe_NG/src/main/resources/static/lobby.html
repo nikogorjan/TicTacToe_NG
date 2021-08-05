@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lobby</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.4.0/sockjs.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+    </head>
+    <body>
+        <div class="center_lobby" >
+            <div id="welcome"><span>Welcome </span><span id="client_name"></span></div>
+            <button type="button" class="btn btn-default" id="create_btn">Create lobby</button>
+            <button type="button" class="btn btn-default" id="play_btn" >Play vs computer</button>
+            <button type="button" class="btn btn-default" id="connect_random_btn" >Connect to random</button>
+
+
+            <div class="form-group" id="input">
+                <label for="game_id">Game ID:</label>
+                <input type="text" class="form-control" id="game_id">
+                <button type="button" class="btn btn-default" id="connect_btn" >Connect</button>
+            </div>
+        </div>
+
+        <script src="js/lobby.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/socket_js.js"></script>
+    </body>
+</html>
